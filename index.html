@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="viewer">
+        <div id="magazine" class="magazine">
+            <img id="page-left" class="page-img show">
+            <img id="page-right" class="page-img show">
+        </div>
+
+        <!-- Índice lateral -->
+        <div id="sidebar-index"></div>
+
+        <div class="controls">
+            <button id="prev">⬅️ Anterior</button>
+            <span id="page-indicator">Página 1</span>
+            <button id="next">➡️ Siguiente</button>
+            <button id="toggle-view">📖 1 / 2 páginas</button>
+            <button id="fullscreen">⤢ Expandir</button>
+            <button id="open-index">📂 Índice</button>
+        </div>
+    </div>
+
+    <div id="index-overlay" class="hidden">
+        <div id="index-panel">
+            <h2>Índice</h2>
+            <div id="index-list"></div>
+            <button id="close-index" class="close-btn">Cerrar</button>
+        </div>
+    </div>
+
+
+    <!-- Botón flotante para salir del modo expandido -->
+    <button id="exit-fullscreen" class="exit-btn">✕</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="social-links">
+                <a class="btn-ig" href="https://www.instagram.com/touhou_argentina/" target="_blank">
+                    Instagram <img src="icons/instagram.png" class="icon">
+                </a>
+
+                <a class="btn-tw" href="https://x.com/TouhouArgentina" target="_blank">
+                    Twitter / X <img src="icons/twitter.png" class="icon">
+                </a>
+
+                <a class="btn-lt" href="https://linktr.ee/tohoargentina" target="_blank">
+                    linktr <img src="icons/linktr.png" class="icon">
+                </a>
+            </div>
+
+            <div class="copyright">
+                &copy; Touhou Argentina 2025
+                <img src="icons/icono.png" class="icon-inline"> —
+                <a href="https://x.com/chafa_afk" target="_blank" class="enoko-link">
+    Enoko doro works
+    <img src="enoko doro.png" class="icon-inline">
+</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
